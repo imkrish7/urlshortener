@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            API Project: URL Shortener Microservice
+        </h1>
+        <h2>User Story:</h2>
+    </header>
+
+    <main>
+        <div class="story">
+            <ol>
+                <li>1. I can POST a URL to [project_url]/api/shorturl/new and I will receive a shortened URL in the JSON
+                    response.
+                    Example : {"original_url":"www.google.com","short_url":1}
+                </li>
+                <li>2. If I pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the
+                    JSON response will contain an error like {"error":"invalid URL"}
+                    HINT: to be sure that the submitted url points to a valid site you can use the function
+                    dns.lookup(host, cb) from the dns core module.
+                </li>
+                <li>3. When I visit the shortened URL, it will redirect me to my original link.</li>
+            </ol>
+        </div>
+        <div class="creation">
+            <h1>Short URL Creation</h1>
+            <p>example: POST [project_url]/api/shorturl/new - https://www.google.com</p>
+            <form method="POST" action="/api/shorturl/new">
+            <label for="">URL to be shortend</label>
+            <input type="text" name="url">
+            <button type="submit">POST URL</button>
+            </form>
+        </div>
+
+        <div class="usage">
+            <h1>Example Usage</h1>
+            <a href="http://">[this_project_url]/api/shorturl/3649</a>
+        </div>
+
+        <div class="direct">
+            <h1>Will Redirect to:</h1>
+            <p>https://forum.freecodecamp.com</p>
+        </div>
+
+        <div class="owner">
+            <a href="http://">By Krishna</a>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

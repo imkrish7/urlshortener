@@ -1,0 +1,42 @@
+*{
+    /* margin:0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+body{
+    background:#493a30;
+    color:#fff;
+    text-align: center;
+}
+
+ol{
+    text-align: center;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+p,li,a{
+    margin:15px;
+    font-size:20px;
+    text-align:center;
+    color:#fff;
+}
+label{
+    font-size: 25px;
+}
+
+
+input {
+    height:40px;
+    margin:5px;
+    width:300px;
+}
+
+button{
+    width:90px;
+    height:40px;
+    border:none;
+    box-shadow: -0px 0px 1px 1px #fff;
+}
